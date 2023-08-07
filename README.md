@@ -12,6 +12,6 @@ A simple React-based To-Do application powered by Supabase for the backend and d
 
 
 Technologies Used
-- **React.js
-- **Supabase
-- **CSS
+- React.js
+- Supabase
+- CSS

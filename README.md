@@ -16,5 +16,5 @@ A simple React-based To-Do application powered by Supabase for the backend and d
 - Supabase
 - CSS
 
-## Deploy on Netlify
+## Deployed on Netlify
 - https://todos-apps-me.netlify.app/

@@ -1,27 +1,17 @@
-# React + TypeScript + Vite
+# ToDo App with Supabase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based To-Do application powered by Supabase for the backend and data storage. It allows users to manage their tasks, view detailed info, and interact with the UI intuitively.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add New Tasks**: Input tasks with their title and additional details.
+- **Task Information**: Hover over a task to see its detailed information.
+- **Freeze Info Box**: Click on a task to freeze the detailed info box.
+- **Delete Tasks**: Ability to delete individual tasks or all tasks at once.
+- **Random Tasks Generator**: Quickly generate random tasks for testing.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Technologies Used
+- **React.js
+- **Supabase
+- **CSS

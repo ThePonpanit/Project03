@@ -17,4 +17,4 @@ Technologies Used
 - CSS
 
 ##Deploy on Netlify
-https://todos-apps-me.netlify.app/
+- https://todos-apps-me.netlify.app/

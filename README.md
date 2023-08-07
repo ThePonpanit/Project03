@@ -15,3 +15,6 @@ Technologies Used
 - React.js
 - Supabase
 - CSS
+
+##Deploy on Netlify
+https://todos-apps-me.netlify.app/

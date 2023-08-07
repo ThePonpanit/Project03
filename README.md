@@ -11,10 +11,10 @@ A simple React-based To-Do application powered by Supabase for the backend and d
 - **Random Tasks Generator**: Quickly generate random tasks for testing.
 
 
-Technologies Used
+## Technologies Used
 - React.js
 - Supabase
 - CSS
 
-##Deploy on Netlify
+## Deploy on Netlify
 - https://todos-apps-me.netlify.app/

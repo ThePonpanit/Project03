@@ -104,7 +104,7 @@
 
 .jumping-char {
   display: inline-block;
-  animation: jump 1.5s infinite;
+  animation: jump 1.85s;
 }
 
 @keyframes jump {

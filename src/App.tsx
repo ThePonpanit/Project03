@@ -98,7 +98,18 @@ function App() {
 
   return (
     <>
-      <h1>To Do(s)</h1>
+      <h1>
+        {Array.from("To Do(s)").map((char, index) => (
+          <span
+            className="jumping-char"
+            style={{ animationDelay: `${index * 0.2}s` }}
+            key={index}
+          >
+            {char === " " ? "\u00A0" : char}
+          </span>
+        ))}
+      </h1>
+
       <div className="center-container">
         <div className="input-group">
           <label htmlFor="title">Title:</label>
@@ -157,11 +168,11 @@ function App() {
               }}
             >
               <span>({idx + 1})</span>
-              <span>📅{date}</span>
+              <span>📆{date}</span>
               <span>⏰{time}</span>
               <span>📰{todo.title}</span>
               <span className="trash" onClick={() => handleDelete(todo)}>
-                🗑️
+                ❌
               </span>
             </div>
           );

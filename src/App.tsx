@@ -80,12 +80,21 @@ function App() {
 
   const generateRandomTodos = () => {
     let promises = [];
-    for (let i = 0; i < 10; i++) {
-      let todoTitle = `Random Todo ${Math.random().toString(36).substring(7)}`;
-      let todoInfo = `Random Info ${Math.random().toString(36).substring(7)}`;
 
+    for (let i = 0; i < 10; i++) {
+      // Fetch a random todo from the dummyJSON API
       promises.push(
-        supabase.from("todos").insert([{ title: todoTitle, info: todoInfo }])
+        fetch("https://dummyjson.com/todos/random")
+          .then((res) => res.json())
+          .then((randomTodo) => {
+            // Simulate adding the fetched random todo to your database
+            return supabase.from("todos").insert([
+              {
+                title: randomTodo.todo,
+                info: `Random Info ${Math.random().toString(36).substring(7)}`,
+              },
+            ]);
+          })
       );
     }
 

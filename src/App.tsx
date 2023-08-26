@@ -90,7 +90,7 @@ function App() {
             // Simulate adding the fetched random todo to your database
             return supabase.from("todos").insert([
               {
-                title: randomTodo.todo,
+                title: `${randomTodo.todo}.`,
                 info: `Random Info ${Math.random().toString(36).substring(7)}`,
               },
             ]);

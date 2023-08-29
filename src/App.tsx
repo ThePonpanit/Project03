@@ -82,12 +82,10 @@ function App() {
     let promises = [];
 
     for (let i = 0; i < 10; i++) {
-      // Fetch a random todo from the dummyJSON API
       promises.push(
         fetch("https://dummyjson.com/todos/random")
           .then((res) => res.json())
           .then((randomTodo) => {
-            // Simulate adding the fetched random todo to your database
             return supabase.from("todos").insert([
               {
                 title: `${randomTodo.todo}.`,
@@ -179,7 +177,7 @@ function App() {
               <span>({idx + 1})</span>
               <span>📆{date}</span>
               <span>⏰{time}</span>
-              <span>📰{todo.title}</span>
+              <span id="toDoList">📰{todo.title}</span>
               <span className="trash" onClick={() => handleDelete(todo)}>
                 ❌
               </span>

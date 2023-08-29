@@ -19,6 +19,10 @@
   border-radius: 0.5em;
 }
 
+#toDoList {
+  margin-left: 5px;
+}
+
 .todo-item:hover {
   background-color: #979797;
   transform: scale(1.05);
